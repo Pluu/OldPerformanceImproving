@@ -23,6 +23,6 @@ class MergeSampleView @JvmOverloads constructor(
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
-        binding.tvSubtitle.text = binding.ivIcon.getDepthInfo()
+        binding.tvDepth.text = binding.ivIcon.getDepthInfo()
     }
 }
