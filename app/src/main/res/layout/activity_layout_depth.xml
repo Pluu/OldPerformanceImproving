@@ -6,9 +6,9 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".LayoutDepthActivity">
 
-    <com.pluu.layoutdepthcheck.widget.IncludeSampleView
+    <com.pluu.layoutdepthcheck.widget.NormalSampleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#33FF0000" />

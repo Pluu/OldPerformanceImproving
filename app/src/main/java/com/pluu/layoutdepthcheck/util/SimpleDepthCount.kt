@@ -1,4 +1,4 @@
-package com.pluu.layoutdepthcheck
+package com.pluu.layoutdepthcheck.util
 
 import android.view.View
 import android.widget.FrameLayout
