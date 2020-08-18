@@ -26,14 +26,24 @@ class MainActivity : AppCompatActivity() {
                 add(::LinearLayout) {
                     orientation = LinearLayout.VERTICAL
                     setPadding(dp2Px(10f))
-                    button(
-                        text = "Check Layout Depth",
-                        measureResult = defaultButtonStyle
-                    ) {
-                        startActivity(Intent(this@MainActivity, LayoutDepthActivity::class.java))
-                    }
+                    bindContents(defaultButtonStyle)
                 }
             }
+        }
+    }
+
+    private fun LinearLayout.bindContents(defaultButtonStyle: Button.() -> Unit) {
+        button(
+            text = "Check Layout Depth",
+            measureResult = defaultButtonStyle
+        ) {
+            startActivity(Intent(this@MainActivity, LayoutDepthActivity::class.java))
+        }
+        button(
+            text = "Check GPU Overdraw",
+            measureResult = defaultButtonStyle
+        ) {
+            startActivity(Intent(this@MainActivity, GpuOverdrawActivity::class.java))
         }
     }
 }
